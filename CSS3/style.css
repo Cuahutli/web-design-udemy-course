@@ -1,16 +1,19 @@
-nav > ul > li{
-	list-style: none;
+
+header h2{
+	color:blue;
 }
 
-header{
-	width: 100%;
-	height: 50px;
-	background-color: red;
+h2, h3{
+	color:red;
 }
 
-div{
-	width: 50px;
-	height: 50px;
-	margin: 20px;
-	background: blue;
+p{
+	color:red;
+}
+p#azul{
+	color:blue;
+}
+
+.prueba{
+	color:green;
 }
