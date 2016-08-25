@@ -17,3 +17,29 @@ p#azul{
 .prueba{
 	color:green;
 }
+/*
+	selector adyacente
+	elemento1 + elemento2
+	todos los elementos p que tienen antes un p se les aplica
+	esta propiedad 
+*/
+p + p {
+	font-weight: bold;
+}
+
+/*
+	selector de padre
+	> todo parrafo que sea hijo de un div
+*/
+div > p{
+	color: brown;
+}
+
+
+/*
+	selectores hermanos
+	elemento1 ~ elemento2
+*/
+p ~ p{
+	color:purple;
+}
