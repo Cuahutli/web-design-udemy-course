@@ -55,3 +55,16 @@ h2[title="hola"]{
 h2[title ~="main"]{
 	color:yellow;
 }
+
+/*
+	1 CSS del navegador
+	2 Caracteristicas del usuario en el browser
+	3 archivos css enlazados en el orden en el que
+	  se hayan enlazados (añadidos)
+	4 propiedades que se heredan	 
+	5 propiedades propias del elemento (p,h2,h3,etc)
+	6 propiedades de las clases asignadas y en el mismo
+	  orden de asignacion (en el css)
+  	7 identificador (id) siempre y cuando este despues de
+  	  la clase
+*/
