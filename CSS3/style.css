@@ -1,29 +1,31 @@
-/*
-	medidas relativas
-	pixeles -  (el tamaño del pixel
-							  depende del tamaño de la pantalla)
-	em - (1em=14px por default)					 
-	rem - similar al rem pero calcula en funci´on del body, no de lo que hereda
-
-	pt, cm, mm, pc, in son medidas absolutas
-*/
-body{
-	font-size: 16px;
+div{
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	margin: 20px;
 }
 
-.em{
-	font-size: 2em;
+.reservadas{
+	background: lime;
 }
 
-div p {
-	font-size: 2em;
+.luzRGB{
+	background: rgb(0,255,0);
 }
 
-div p.rem{
-	font-size: 1rem;
+.hex{
+	background: #00FF00;
 }
 
-p.ex{
-	font-size: 1ex;
+.porcentual{
+	background: rgb(0%,100%,0%);
 }
 
+.hsl{
+	background: hsl(50%,25%,75%);
+}
+
+.rgba{
+	background: rgba(127,51,191,
+		.6);
+}
