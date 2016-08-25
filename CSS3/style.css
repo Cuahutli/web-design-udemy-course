@@ -1,70 +1,29 @@
-
-header h2{
-	color:blue;
-}
-
-h2, h3{
-	color:red;
-}
-
-p{
-	color:red;
-}
-p#azul{
-	color:blue;
-}
-
-.prueba{
-	color:green;
-}
 /*
-	selector adyacente
-	elemento1 + elemento2
-	todos los elementos p que tienen antes un p se les aplica
-	esta propiedad 
+	medidas relativas
+	pixeles -  (el tamaño del pixel
+							  depende del tamaño de la pantalla)
+	em - (1em=14px por default)					 
+	rem - similar al rem pero calcula en funci´on del body, no de lo que hereda
+
+	pt, cm, mm, pc, in son medidas absolutas
 */
-p + p {
-	font-weight: bold;
+body{
+	font-size: 16px;
 }
 
-/*
-	selector de padre
-	> todo parrafo que sea hijo de un div
-*/
-div > p{
-	color: brown;
+.em{
+	font-size: 2em;
 }
 
-
-/*
-	selectores hermanos
-	elemento1 ~ elemento2
-*/
-p ~ p{
-	color:purple;
-}
-/*
-h2[title]{
-	color:brown;
-}*/
-
-h2[title="hola"]{
-	color:brown;
+div p {
+	font-size: 2em;
 }
 
-h2[title ~="main"]{
-	color:yellow;
+div p.rem{
+	font-size: 1rem;
 }
 
-/*
-	1 CSS del navegador
-	2 Caracteristicas del usuario en el browser
-	3 archivos css enlazados en el orden en el que
-	  se hayan enlazados (añadidos)
-	4 propiedades que se heredan	 
-	5 propiedades propias del elemento (p,h2,h3,etc)
-	6 propiedades de las clases asignadas y en el mismo
-	  orden de asignacion (en el css)
-  	7 identificador (id) siempre y cuando este despues de
-  	  la clase
-*/
+p.ex{
+	font-size: 1ex;
+}
+
