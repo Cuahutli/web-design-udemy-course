@@ -43,3 +43,15 @@ div > p{
 p ~ p{
 	color:purple;
 }
+/*
+h2[title]{
+	color:brown;
+}*/
+
+h2[title="hola"]{
+	color:brown;
+}
+
+h2[title ~="main"]{
+	color:yellow;
+}
