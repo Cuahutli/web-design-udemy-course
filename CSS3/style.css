@@ -1,31 +1,12 @@
-/*
-	el tamaño total de la caja aqui seria.
-	width: 100px;
-	height: 100px;
-	border:1px solid black;
-	margin:20px;
 
-	tamaño real cajita: 102px;
-	espacio que ocupa: 142px;
-
-	el tamaño total de la caja aqui seria.
-	width: 100px;
-	height: 100px;
-	border:1px solid black;
-	margin:20px;
-	paddin:10px;
-
-	tamaño real cajita: 102px;
-	espacio que ocupa: 162px;
-*/
 div{
 	font-size: 14px;
-	width: 100px;
+	width: 50%;
 	height: 100px;
 	border:1px solid black;
-	margin:20px;
-	padding: 10px;
 }
-p{
-	padding: 5px;
+
+div.dimension{
+	min-width: 200px;
+	max-width: 400px;
 }
