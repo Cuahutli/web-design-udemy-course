@@ -1,34 +1,7 @@
+
 /*
-	los position establecen en que punto e la pagina comenzar´a
-	a posicionarse, dibujarse, mostrarse el elemente html que tienes
-	en tu codigo.
-
-	por defecto todos los elementos se crean con el valor
-	position: static;	
-	se empiezan a pintar en la esquina superir izquierda del padre
-
-	
-	.hijo1{
-		width: 50px;
-		height: 50px;
-		background: red;
-		top: 30px;
-	}
-
-	lo anterior no funcionaria por que el position:static, que es
-	el position que viene por default. no tiene en cuenta nunca las coordenadas
-	se tendria que usar position:relative;
-
-	por defecto el vertical-align es bottom
-	
-	para el absolute, esto es como si no existiera en cuanto al posicionamiento,se enciman unos con otros.
-	y en este caso las coordenadas serian del padre superior con absolute.
-
-	para que esto quedara con respecto al elemento al padre se le tendria que poner position:relative al padre;
-
-	el position:fixed se posiciona con respcto al body, no le importa el padre, abuelo ni nada.. es respecto al body.;
-	con esto se le indica que siempre ocupara esta zona de la pantalla siempre, aunque yo base
-
+	lo normal cuando se usa el float
+	es al proximo elemento ponerle el inline block
 */
 .padre{
 	width: 250px;
@@ -38,22 +11,26 @@
 	position: relative;
 }
 
-/*.padre > div{
-	display: inline-block;
-	vertical-align: top;
-}*/
+.hijo2{
+	width: 100px;
+	height: 100px;
+	background: green;
+	float: right;
+}
 
 .hijo1{
 	width: 50px;
 	height: 50px;
 	background: red;
-	position: fixed;
 	top: 0px;
+	display: inline-block;
 	
 }
 
-.hijo2{
-	width: 100px;
-	height: 100px;
-	background: green;
+.hijo3{
+	width: 50px;
+	height: 50px;
+	background: blue;
+	top: 0px;
+	clear: both; /*para quitar la influencia del float.*/
 }
