@@ -1,21 +1,34 @@
-
 /*
-	lo normal cuando se usa el float
-	es al proximo elemento ponerle el inline block
+	z-index es similar a las capas en photoshop
+	siempre tiene que especificarse con un position, si no
+	no funciona
+
+	como recomendacion, cuando enumere el z-index ir de 
+	10 en 10, por si tengo que meter un elemento por en medio
+	pueda hacerlo sin renumerar los todo lo demas
+
+	overflow:hidden;
+	es como si no existiera lo que queda fuera del padre (lo que sobresale), 
+	se oculta
+
+	el visibility lo que hace, es poder ocultar un elemento, sin que afecte el flujo del resto como el display:none;
+
+	los opacity son semi-transparencias
 */
 .padre{
 	width: 250px;
-	height: 2500px;
+	height: 250px;
 	margin: 25px;
 	background: orange;
 	position: relative;
+	overflow: hidden;
 }
 
 .hijo2{
 	width: 100px;
 	height: 100px;
 	background: green;
-	float: right;
+	position: absolute;
 }
 
 .hijo1{
@@ -24,13 +37,17 @@
 	background: red;
 	top: 0px;
 	display: inline-block;
+	position: relative;
+	z-index: 99;
+	top: -25px;
 	
 }
 
-.hijo3{
-	width: 50px;
-	height: 50px;
-	background: blue;
-	top: 0px;
-	clear: both; /*para quitar la influencia del float.*/
+.oculto{
+	/*display: none;*/
+	visibility: hidden;
+}
+
+.transparencia{
+	opacity: .5; /* CON 1 SERIA SIMILAR QUE EL VISIBILITY:HIDDEN*/
 }
