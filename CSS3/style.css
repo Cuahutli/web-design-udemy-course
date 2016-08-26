@@ -1,31 +1,31 @@
-div{
+/*
+	el tamaño total de la caja aqui seria.
 	width: 100px;
 	height: 100px;
-	border: 1px solid black;
-	margin: 20px;
-}
+	border:1px solid black;
+	margin:20px;
 
-.reservadas{
-	background: lime;
-}
+	tamaño real cajita: 102px;
+	espacio que ocupa: 142px;
 
-.luzRGB{
-	background: rgb(0,255,0);
-}
+	el tamaño total de la caja aqui seria.
+	width: 100px;
+	height: 100px;
+	border:1px solid black;
+	margin:20px;
+	paddin:10px;
 
-.hex{
-	background: #00FF00;
+	tamaño real cajita: 102px;
+	espacio que ocupa: 162px;
+*/
+div{
+	font-size: 14px;
+	width: 100px;
+	height: 100px;
+	border:1px solid black;
+	margin:20px;
+	padding: 10px;
 }
-
-.porcentual{
-	background: rgb(0%,100%,0%);
-}
-
-.hsl{
-	background: hsl(50%,25%,75%);
-}
-
-.rgba{
-	background: rgba(127,51,191,
-		.6);
+p{
+	padding: 5px;
 }
