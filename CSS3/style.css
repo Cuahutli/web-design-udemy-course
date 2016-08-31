@@ -1,53 +1,24 @@
 /*
-	z-index es similar a las capas en photoshop
-	siempre tiene que especificarse con un position, si no
-	no funciona
+	:before y :after son pseudoelementos.;
+	no es obligatorio primero :before y luego :after;
+	aunque el nombre diga lo contrario.
 
-	como recomendacion, cuando enumere el z-index ir de 
-	10 en 10, por si tengo que meter un elemento por en medio
-	pueda hacerlo sin renumerar los todo lo demas
-
-	overflow:hidden;
-	es como si no existiera lo que queda fuera del padre (lo que sobresale), 
-	se oculta
-
-	el visibility lo que hace, es poder ocultar un elemento, sin que afecte el flujo del resto como el display:none;
-
-	los opacity son semi-transparencias
+	los pseudo-elementos van a seguir siempre al elemento.
+	todo pseudo-elemento debe tener un content
+	los pseudo-elementos no son seleccionables por el usuario
+	los pseudo-elementos están para darle algo más de estilo visual al elemento, no para escribir texto
+	recordar que si se desea usar position relative, se le tiene que poner también al padre el position.
+	el :before toma como referencia el punto inicial del elemento;
+	el :after toma como referencia el punto final del elemento;
 */
-.padre{
-	width: 250px;
-	height: 250px;
-	margin: 25px;
-	background: orange;
-	position: relative;
-	overflow: hidden;
-}
 
-.hijo2{
-	width: 100px;
-	height: 100px;
-	background: green;
-	position: absolute;
+p{
+	color:red;
+	position:relative;
 }
-
-.hijo1{
-	width: 50px;
-	height: 50px;
-	background: red;
-	top: 0px;
-	display: inline-block;
-	position: relative;
-	z-index: 99;
-	top: -25px;
-	
-}
-
-.oculto{
-	/*display: none;*/
-	visibility: hidden;
-}
-
-.transparencia{
-	opacity: .5; /* CON 1 SERIA SIMILAR QUE EL VISIBILITY:HIDDEN*/
+p:after{
+	content: 'Esto es un Saludo: ';
+	top: 50px;
+	position:relative;
+	left: 150px;
 }
