@@ -1,24 +1,14 @@
 /*
-	:before y :after son pseudoelementos.;
-	no es obligatorio primero :before y luego :after;
-	aunque el nombre diga lo contrario.
-
-	los pseudo-elementos van a seguir siempre al elemento.
-	todo pseudo-elemento debe tener un content
-	los pseudo-elementos no son seleccionables por el usuario
-	los pseudo-elementos están para darle algo más de estilo visual al elemento, no para escribir texto
-	recordar que si se desea usar position relative, se le tiene que poner también al padre el position.
-	el :before toma como referencia el punto inicial del elemento;
-	el :after toma como referencia el punto final del elemento;
+	una pseudo-clase es el estado en el que se encuentra el elemento
+	los elementos, tienen estados particulares, a la espera de que se escriba en el, hover, etc..
 */
 
-p{
-	color:red;
-	position:relative;
+/*cuando un link está pendiente de ser visto*/
+a#link2:link{
+	color:green;
 }
-p:after{
-	content: 'Esto es un Saludo: ';
-	top: 50px;
-	position:relative;
-	left: 150px;
+
+/*cuando un link ha sido visitado*/
+a#link1:visited{
+	color:red;
 }
