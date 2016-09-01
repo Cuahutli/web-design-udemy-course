@@ -2,24 +2,24 @@
 
 	más pseudo-clases
 
-	:nth-child(N);
-	:nth-last-child(N);
+	:nth-child(N); (número de elemento iniciando desde el primero)
+	:nth-last-child(N); (número de elemento iniciando desde el último)
 
-	:nth-of-type(N);
-	:nth-last-of-type(N);
+	:nth-of-type(N); (número de elemento de un tipo iniciando del primero)
+	:nth-last-of-type(N); (número de elemento de un tipo iniciando del último)
 
-	:first-of-type;
-	:last-of-type;
-	:only-of-type;
-	:empty;
-	:not(s);
+	:first-of-type; (primer elemento de un tipo)
+	:last-of-type; (último elemento de un tipo)
+	:only-of-type; (si sólo existe un elemento de ese tipo en el padre lo aplica)
+	:empty; (si el elemento está vácio lo aplica)
+	:not(s); (si no es de ese selector, elemento lo aplica)
 
-	:last-child;
-	:only-child;
+	:last-child; (ultimo hijo)
+	:only-child; (si es el único hijo)
 	:root;
-	:enable;
-	:disable;
-	:checked;
+	:enable; (si está habilitado)
+	:disable; (si está deshabilitado)
+	:checked; (si está checked para radiobuttons y cheks)
 
 	even / odd
 */
