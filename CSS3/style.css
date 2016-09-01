@@ -1,35 +1,70 @@
 /*
-	una pseudo-clase es el estado en el que se encuentra el elemento
-	los elementos, tienen estados particulares, a la espera de que se escriba en el, hover, etc..
 
+	más pseudo-clases
 
-	*hover (común en todos los elementos)
-	*active (cuando se está haciendo click)
-	*focus
+	:nth-child(N);
+	:nth-last-child(N);
+
+	:nth-of-type(N);
+	:nth-last-of-type(N);
+
+	:first-of-type;
+	:last-of-type;
+	:only-of-type;
+	:empty;
+	:not(s);
+
+	:last-child;
+	:only-child;
+	:root;
+	:enable;
+	:disable;
+	:checked;
+
+	even / odd
 */
-
-/*cuando un link está pendiente de ser visto*/
-a#link2:link{
-	color:green;
+body{
+	background-color: khaki;
+	font-size: 12px;
 }
 
-/*cuando un link ha sido visitado*/
-a#link1:visited{
+div{
+	margin:10px;
+}
+
+div *{
+	border: 1px solid black;
+	width: 80px;
+	height: 50px;
+	background: white;
+	display: inline-block;
+}
+
+
+div *:nth-child(even){
 	color:red;
 }
-
-p:hover{
-	color:green;
-	font-size: 20px;
-	font-weight: bolder;
-	transition: .5s;
+div *:nth-child(2){
+	background-color: purple;
 }
 
-span:active{
+div *:nth-last-child(2){
+	background-color: orange;
+}
+
+div p:nth-of-type(odd){
 	color:green;
 }
 
-input:focus{
+
+div p:first-of-type{
+	background-color: orange;
+}
+
+div article:not(.clase){
+	background-color: red;
+}
+
+div *:not(p){
 	border-radius: 10px;
-	border: 2px dashed purple;
 }
