@@ -1,19 +1,27 @@
 /*
-Los valores para font-weight pueden ser 100,200,300,400,500,600,700,800, normal, lighter, bold, bolder
+Los valores para font-weight pueden ser 
+100,200,300,400,500,600,700,800, 
+normal, lighter, bold, bolder
 normal = 400,
 bold = 700
 bolder = 900,
 lighter = 100
 
 Las palabras reservadas tiene su equivalencia:;
-Los valores para font-style pueden ser (normal, italic, oblique)
-Los valores para text-align pueden ser left, right, center, justify
+Los valores para font-style pueden ser 
+	(normal, italic, oblique)
+Los valores para text-align pueden ser 
+	left, right, center, justify
 line-height
-Los valores para text-decoration pueden ser normal o none, underline, overline, line-through
+Los valores para text-decoration pueden ser 
+	normal o none, underline, overline, 
+	line-through
 
-Los valores para text-transform pueden ser capitalize, uppercase, lowercase
+Los valores para text-transform pueden ser 
+	capitalize, uppercase, lowercase
 
-También podemos darle a font-variant el valor small-caps
+También podemos darle a font-variant el valor 
+	small-caps
 text-indent:;
 letter-spacing:;
 word-spacing:;
@@ -45,7 +53,6 @@ p{
 p:first-letter{
 	font-size: 30px;
 }
-
 p:first-line{
 	font-size: 20px;
 }
