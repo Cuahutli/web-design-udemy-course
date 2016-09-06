@@ -1,70 +1,39 @@
 /*
-Los valores para font-weight pueden ser 
-100,200,300,400,500,600,700,800, 
-normal, lighter, bold, bolder
-normal = 400,
-bold = 700
-bolder = 900,
-lighter = 100
+Los tres atributos fundamentales para establecer
+el borde a un elemento son:
 
-Las palabras reservadas tiene su equivalencia:;
-Los valores para font-style pueden ser 
-	(normal, italic, oblique)
-Los valores para text-align pueden ser 
-	left, right, center, justify
-line-height
-Los valores para text-decoration pueden ser 
-	normal o none, underline, overline, 
-	line-through
+	border-width: indica la anchura del borde;
+	border-style: indica el tipo del borde;
+			(solid, dashed, double, dotted, inset
+			 outset o none)
+	border-color: indica el color del borde;
 
-Los valores para text-transform pueden ser 
-	capitalize, uppercase, lowercase
+Estos atributos pueden resumirse en una sola linea
+con la estructura.
+borde: anchura estilo color;
 
-También podemos darle a font-variant el valor 
-	small-caps
-text-indent:;
-letter-spacing:;
-word-spacing:;
+Así mismo se puede aplicar a un borde concreto
+border-top-style o border-left-color, etc.
 
-:first-letter;
-:first-line;
+border-radius: 20px;
+border-top-left-radius: 30px 10px;
+
+se puede establecer el rado de curbatura de las }
+esquinas de forma igualada
+
 */
 
-
-
-@font-face{
-	font-family: "balo";
-	src: url('../HTML/balo.ttf');
-	src: local(?),
-		 url('../HTML/balo.ttf') format ('truetype');
-}
-
-p{
-	font-family: "balo", Arial;
-	font-weight: lighter;
-	font-style: oblique;
-	text-align: justify;
-	text-decoration: line-through;
-	text-indent: 14px;
-	letter-spacing: 3px;
-	word-spacing: 10px;
-}
-
-p:first-letter{
-	font-size: 30px;
-}
-p:first-line{
-	font-size: 20px;
-}
-
-span{
-	font-family: 'VT323', monospace;
-	text-decoration: underline;
-	text-transform: capitalize;
-	font-variant: small-caps;
-
-}
-
-input{
-	text-decoration: lowercase;
+div{
+	height: 200px;
+	width: 100px;
+	background-color: orange;
+	margin: 50px;
+	/*border-color: red;
+	border-style: solid;
+	border-width: 5px;*/
+	border: 2px solid green;
+	border-top-style: dashed;
+	border-radius: 10px;
+	border-bottom-left-radius: 25px;
+	border-top-right-radius: 50px 20px;
 }
