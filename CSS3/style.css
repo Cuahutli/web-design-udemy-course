@@ -1,34 +1,39 @@
-/*
-Para posicionar el fondo de un elemento
-tenemos 3 posiciones:
-	border-box (desde el borde),
-	padding-box (desde la zona del padding) y 
-	content-box (desde la zona del contenido)
-*/
-
 div{
 	height: 200px;
 	width: 200px;
-	border: 5px solid green;
+	background-color: orange;
+	border: 2px solid black;
 	margin: 50px;
-}
-.imagen{
-	/*background-repeat: no-repeat;
-	background-position: border-box;*/
-	background: url("../HTML/firma.png"),
-				url("../HTML/imagen.png");
-	background-repeat: 	no-repeat, 
-						repeat;
-	background-position: right bottom, 
-						 right top;
+	/*transform: rotate(20deg);
+	transform-origin: center left;*/
+	/*transform: skew(20deg, 10deg);*/
+
 }
 
-.degradados{
-		background: -webkit-linear-gradient(20deg, blue 0%, red 30%, green 80%, yellow 100%);
-		background: -o-linear-gradient(20deg, blue 0%, red 30%, green 80%, yellow 100%);
-		background: -moz-linear-gradient(20deg, blue 0%, red 30%, green 80%, yellow 100%);
+.aux:hover{
+	/*transform: translate(50px);*/
+	transform: scale(1, 1.4);
+	margin-bottom:80px;
+}
 
-        background: -webkit-radial-gradient(center, blue 0%, red 30%, green 80%, yellow 100%);
-		background: -o-radial-gradient(center, blue 0%, red 30%, green 80%, yellow 100%);
-		background: -moz-radial-gradient(center, blue 0%, red 30%, green 80%, yellow 100%);
-	}	
+/*
+
+la diferencia entre position y transform es que 
+no afecta el posicionamiento, sigue manteniendo las
+proporciones.
+
+
+transform: tipo(cantidad);
+transform: tipoX(cantidad);
+transform: tipoY(cantidad);
+transform: tipo(cantidadX, cantidadY);
+
+transform: tipo(), tipo(), tipo();
+
+
+tipos de rotaciones:
+rotate
+skew
+translate
+scale
+*/
