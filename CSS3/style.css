@@ -1,53 +1,71 @@
+body{
+	background: orange;
+}
 div{
-	height: 200px;
-	width: 200px;
-	background-color: orange;
-	border: 2px solid black;
-	margin: 50px;
-	/*transform: rotate(20deg);
-	transform-origin: center left;*/
-	/*transform: skew(20deg, 10deg);*/
-	/*transition-property: all;
-	transition-duration: .3s;
-	transition-timing-function: ease-in-out;*/
-	transition: all 2s linear;
-	transition-delay: 2s;
-
+	width: 80%;
+	height: 150px;
+	margin: 8%;
+	display: inline-block;
+	background: white;
 	/*
-		transition-timing-funcion opciones..
-		ease,
-		ease-in,
-		ease-out,
-		ease-in-out,
-		linear
+		se sobrepasa el 100% por el borde
+		height: 150px;
+		border: 2px solid black;
+		margin: 10%;
+
 	*/
 }
 
-.aux:hover{
-	/*transform: translate(50px);*/
-	transform: rotate(90deg) skew(20deg);
-	background:green;
+/*
+estas media querys son como las más orientativas
+lo más común
+*/
+@media screen and (min-width: 480px){
+	body{
+		background: #34A647;
+	}
 	
 }
 
+@media screen and (min-width: 767px){
+	body{
+		background: #34A2A6;
+	}
+	div{
+		width: 40%;
+		margin: 4%;
+	}
+}
+
+@media screen and (min-width: 950px){
+	body{
+		background: #A76A9E;
+	}
+
+	div{
+		width: 29%;
+		margin: 2%;
+	}
+}
+
 /*
+mobile first es diseñar por defecto primero
+como se verá en un dispositivo móvil, y después
+se irá indicando como cambia la página conforme
+va cambiando el tamaño
+*/
 
-la diferencia entre position y transform es que 
-no afecta el posicionamiento, sigue manteniendo las
-proporciones.
+/*
+recomendaciones...
 
+para ver en que mediaquery está actualmente, una 
+buena forma es cambiarle el color al body para
+ver la diferencia.
 
-transform: tipo(cantidad);
-transform: tipoX(cantidad);
-transform: tipoY(cantidad);
-transform: tipo(cantidadX, cantidadY);
+la otra es usar las medidas en % de ser posible,
+no en pixeles.
 
-transform: tipo() tipo() tipo();
-
-
-tipos de rotaciones:
-rotate
-skew
-translate
-scale
+la clave del responsive design es que el usuario vaya
+siempre hacía arriba y hacía abajo solamente
+nunca hacía los lados
 */
