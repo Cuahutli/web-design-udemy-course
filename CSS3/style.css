@@ -30,26 +30,23 @@ div{
 	vertical-align: middle;
 }
 
-.cartel:hover{
-	-moz-animation: 1s cartel 1;
-	/*para indicarle cual será el origen de donde rotará*/
-	-moz-transform-origin: top center;
+
+.balanceo:hover{
+	-moz-animation: 1s balanceo 1;
 }
 
-
-@-moz-keyframes cartel{
+@-moz-keyframes balanceo{
 	20%{
-		-moz-transform: rotate(15deg);
+		-moz-transform: scale(0.7)
+						rotate(-6deg);
 	}
-	40%{
-		-moz-transform: rotate(-10deg);
+	30%, 70%{
+		-moz-transform: scale(1.1)
+						rotate(6deg);
 	}
-	60%{
-		-moz-transform: rotate(5deg);
+	50%, 90%{
+		-moz-transform: scale(1.1)
+						rotate(-6deg);
 	}
-	80%{
-		-moz-transform: rotate(-3deg);
-	}
-	
 
 }
