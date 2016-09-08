@@ -30,27 +30,31 @@ div{
 	vertical-align: middle;
 }
 
-
-.descolgado{
-	-moz-animation: 1s descolgado 1;
-	-moz-transform-origin: top left;
+.inRotativo{
+	-moz-animation: 1s inRotativo 1;
 }
 
-@-moz-keyframes descolgado{
-	20% ,60%{
-		-moz-transform: rotate(80deg);
+
+@-moz-keyframes inRotativo{
+	0%{
+		opacity:0;
+		-moz-transform: translateX(-100%)
+						rotate(-260deg);
+						
 	}
-	40%{
-		-moz-transform: rotate(60deg);
-	}
-	70%{
-		opacity: 1;
-		-moz-transform: rotate(80deg);
-	}
-	/*con eso le indicamos que finalizará con otras caracteristicas*/
+}
+
+
+.outRotativo{
+	-moz-animation: 1s outRotativo 1;
+}
+
+
+@-moz-keyframes outRotativo{
 	100%{
-		-moz-transform: translateY(400px);
-		opacity: 0;
+		opacity:0;
+		-moz-transform: translateX(100%)
+						rotate(-260deg);
+						
 	}
-	
 }
