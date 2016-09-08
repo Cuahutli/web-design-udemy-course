@@ -30,31 +30,22 @@ div{
 	vertical-align: middle;
 }
 
-.inRotativo{
-	-moz-animation: 1s inRotativo 1;
+.rebote{
+	-moz-animation: 2s rebote 1;
 }
 
-
-@-moz-keyframes inRotativo{
-	0%{
-		opacity:0;
-		-moz-transform: translateX(-100%)
-						rotate(-260deg);
-						
+@-moz-keyframes rebote{
+	20%, 50%, 80%{
+		-moz-transform: translateY(0px);
 	}
-}
-
-
-.outRotativo{
-	-moz-animation: 1s outRotativo 1;
-}
-
-
-@-moz-keyframes outRotativo{
-	100%{
-		opacity:0;
-		-moz-transform: translateX(100%)
-						rotate(-260deg);
-						
+	30%{
+		-moz-transform: translateY(-45px);
 	}
+	60%{
+		-moz-transform: translateY(-25px);
+	}
+	90%{
+		-moz-transform: translateY(-10px);
+	}
+	
 }
