@@ -1,26 +1,54 @@
 /*
-efecto de esquina redondeada
+efecto menú con borde inferion muy padre
 */
 body{
 	background: #64062E;
-}
-div{
 	font-family: 'Arial';
-	background: #a8cf45;
-	margin: 10px 10px;
-	text-align: center;
-	font-weight: bolder;
-	padding: 15px 30px;
-	width: 80px;
+}
+
+nav{
+	background: white;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	text-align: right;
+}
+
+nav ul{
+	padding: 0px;
+	margin:0px;
+	margin-right: 4px;
+	list-style: none;
+}
+
+
+li{
 	display: inline-block;
-	vertical-align: middle;
+	margin: 7px -2px;
 }
 
-.esquina_redondeada{
-	-moz-transition-duration:0.2s;
-}
-.esquina_redondeada:hover{
-	border-radius: 20px;
-	/*box-shadow: 0px 0px 8px white;*/
+a{
+	text-decoration: none;
+	color: black;
+	font-weight: bolder;
+	/*border: 1px solid red;*/
+	padding: 5px 10px;
+	-moz-transition-duration:0.1s;
 }
 
+/*focus se activa cuando se mantiene pinchado, activo tiene el foco*/
+li:nth-of-type(1) a:focus{
+	border-bottom: 4px solid #40731e;
+	padding-bottom: 2px;
+}
+
+li:nth-of-type(2) a:focus{
+	border-bottom: 4px solid #2d6584;	
+	padding-bottom: 2px;
+}
+
+li:nth-of-type(3) a:focus{
+	border-bottom: 4px solid orange;	
+	padding-bottom: 2px;
+}
