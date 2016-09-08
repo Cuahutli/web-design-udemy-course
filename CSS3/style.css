@@ -1,5 +1,5 @@
 /*
-Camuflaje por color, con movimiento de caja hacía abajo.
+Camuflaje por tamaño
 */
 div{
 	font-family: 'Arial';
@@ -13,39 +13,37 @@ div{
 	vertical-align: middle;
 }
 
-.triangulo_lateral{
+
+.esquina_pagina{
 	-moz-transform: translateX(0);
-	-moz-transition-duration: 0.3s;
 }
 
-.triangulo_lateral:before{
-	content: '';
-	-moz-transition-duration: 0.3s;
+.esquina_pagina:before{
+	content:'';
 
-	/*width: 30px;
-	height: 30px;
-	background: red;*/
+	position:absolute;
+	left: 0px;
+	bottom: 0px;
 
-	border-style: solid;
-	/* se le pone anchura a todos menos a donde queremos que apunte el triangulo (0)*/
-	border-width: 0px 15px 15px 15px;
-	/* se le pone transparen a todos excepto al opuesto de donde apunta el triangulo (donde va el cero)*/
-	/*border-color: transparent transparent red transparent;*/
-	border-color: transparent transparent #a8cf45 transparent;
-
-	position: absolute;
-	left: 50%;
-	top: 0px;
-	margin-left: -15px;
-}
-/*
-Tambíen hay que mover el pseudoelemento, por que sigue al padre
-si no hiciera esto, el triangulo no sobresaldría de la caja.
+/*	width: 35px;
+	height: 35px;
+	background:red;
 */
-.triangulo_lateral:hover:before{
-	top:-13px;
+	width: 0px;
+	height: 0px;
+
+	background: -moz-linear-gradient(
+		45deg,
+		white 45%,
+		#aaa 50%,
+		#ccc 60%,
+		white
+		);
+	-moz-transition-duration: 0.3s;
 }
 
-.triangulo_lateral:hover{
-	-moz-transform: translateY(15px);
+
+.esquina_pagina:hover:before{
+	width: 35px;
+	height: 35px;
 }
