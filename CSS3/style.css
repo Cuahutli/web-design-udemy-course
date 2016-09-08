@@ -1,21 +1,43 @@
+/*
+Camuflaje por color.
+*/
 div{
-	border: 2px solid black;
-	width: 50%;
-	position: relative;
-	margin-left: 25%;
-	padding: 30px;
+	font-family: 'Arial';
+	background: #a8cf45;
+	margin: 10px 10px;
+	text-align: center;
+	font-weight: bolder;
+	padding: 15px 30px;
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
-div:before{
-	content:'Hola';
-	position:absolute;
-	right: 30px;
-	bottom: 0px;
-
+.triangulo_lateral{
+	-moz-transform: translateX(0);
 }
-div:after{
-	content:'Mundo';
-	position:absolute;
-	/*top:3px;*/
 
+.triangulo_lateral:before{
+	content: '';
+	transition-duration: 0.3s;
+
+	/*width: 30px;
+	height: 30px;
+	background: red;*/
+
+	border-style: solid;
+	/* se le pone anchura a todos menos a donde queremos que apunte el triangulo (0)*/
+	border-width: 15px 15px 15px 0px;
+	/* se le pone transparen a todos excepto al opuesto de donde apunta el triangulo (donde va el cero)*/
+	/*border-color: transparent red transparent transparent;*/
+	border-color: transparent #a8cf45 transparent transparent;
+
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	margin-top: -15px;
+}
+
+.triangulo_lateral:hover:before{
+	left:-13px;
 }
