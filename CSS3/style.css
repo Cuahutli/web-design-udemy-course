@@ -30,25 +30,26 @@ div{
 	vertical-align: middle;
 }
 
-.vibrador:hover{
-	-moz-animation: 1s vibracion infinite;
+.cartel:hover{
+	-moz-animation: 1s cartel 1;
+	/*para indicarle cual será el origen de donde rotará*/
+	-moz-transform-origin: top center;
 }
 
-@-moz-keyframes vibracion{
-	10%, 30%, 50%, 70%, 90%{
-		-moz-transform: translateX(-10px);
-	}
 
-	20%, 40%, 60%, 80%{
-		-moz-transform: translateX(10px);	
+@-moz-keyframes cartel{
+	20%{
+		-moz-transform: rotate(15deg);
 	}
-
-	5%, 25%, 45%, 65%, 85%{
-		-moz-transform: translateY(-10px);
+	40%{
+		-moz-transform: rotate(-10deg);
 	}
-
-	15%, 35%, 55%, 75%{
-		-moz-transform: translateY(10px);	
+	60%{
+		-moz-transform: rotate(5deg);
 	}
+	80%{
+		-moz-transform: rotate(-3deg);
+	}
+	
 
 }
