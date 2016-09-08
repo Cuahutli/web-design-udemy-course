@@ -21,7 +21,7 @@ keyframe es lo más parecido a funciones que podemos invocar
 div{
 	font-family: 'Arial';
 	background-color: #a8cf45;
-	margin: 15px 2px;
+	margin: 15px 20px;
 	padding: 5px 40px;
 	text-align: center;
 	font-weight: bolder;
@@ -30,22 +30,25 @@ div{
 	vertical-align: middle;
 }
 
-.chicle:hover{
-	-moz-animation: 1s chicle 1;
-	-webkit-animation: 1s chicle 1;
+.vibrador:hover{
+	-moz-animation: 1s vibracion infinite;
 }
 
-@keyframes chicle{
-	30%{
-		-moz-transform: scaleX(1.25) scaleY(0.75);
-		-webkit-transform: scaleX(1.25) scaleY(0.75);
+@-moz-keyframes vibracion{
+	10%, 30%, 50%, 70%, 90%{
+		-moz-transform: translateX(-10px);
 	}
-	50%{
-		-moz-transform: scaleX(0.75) scaleY(1.25);	
-		-webkit-transform: scaleX(0.75) scaleY(1.25);	
+
+	20%, 40%, 60%, 80%{
+		-moz-transform: translateX(10px);	
 	}
-	60%{
-		-moz-transform: scaleX(1.15) scaleY(0.85);	
-		-webkit-transform: scaleX(1.15) scaleY(0.85);	
+
+	5%, 25%, 45%, 65%, 85%{
+		-moz-transform: translateY(-10px);
 	}
+
+	15%, 35%, 55%, 75%{
+		-moz-transform: translateY(10px);	
+	}
+
 }
