@@ -31,30 +31,26 @@ div{
 }
 
 
-.vaiven:hover{
-	-moz-animation: 1s vaiven 1;
+.descolgado{
+	-moz-animation: 1s descolgado 1;
+	-moz-transform-origin: top left;
 }
 
-@-moz-keyframes vaiven{
-	15%{
-		-moz-transform: translateX(-25%)
-						rotate(-10deg);
+@-moz-keyframes descolgado{
+	20% ,60%{
+		-moz-transform: rotate(80deg);
 	}
-	30%{
-		-moz-transform: translateX(20%)
-						rotate(5deg);
+	40%{
+		-moz-transform: rotate(60deg);
 	}
-	45%{
-		-moz-transform: translateX(-10%)
-						rotate(-3deg);
+	70%{
+		opacity: 1;
+		-moz-transform: rotate(80deg);
 	}
-	60%{
-		-moz-transform: translateX(5%)
-						rotate(2deg);
+	/*con eso le indicamos que finalizará con otras caracteristicas*/
+	100%{
+		-moz-transform: translateY(400px);
+		opacity: 0;
 	}
-	75%{
-		-moz-transform: translateX(-3%)
-						rotate(-1deg);
-	}
-
+	
 }
