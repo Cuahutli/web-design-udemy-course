@@ -1,5 +1,5 @@
 /*
-efecto de expandir borde
+efecto de recogida borde
 */
 body{
 	background: #64062E;
@@ -24,11 +24,12 @@ div{
 	content:'';
 	position: absolute;
 	border: 4px solid white;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
+	top: -16px;
+	bottom: -16px;
+	left: -16px;
+	right: -16px;
 	-moz-transition: all 0.3s;
+	opacity:0;
 }
 
 .expansion_borde:hover:before{
@@ -36,4 +37,5 @@ div{
 	bottom: -6px;
 	left: -6px;
 	right: -6px;
+	opacity: 1;
 }
