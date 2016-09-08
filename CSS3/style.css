@@ -30,16 +30,22 @@ div{
 	vertical-align: middle;
 }
 
-
-.click:hover{
-	-moz-animation: .6s click 1;
+.chicle:hover{
+	-moz-animation: 1s chicle 1;
+	-webkit-animation: 1s chicle 1;
 }
 
-@-moz-keyframes click{
-	25%, 75%{
-		-moz-transform: scale(0.8);
+@keyframes chicle{
+	30%{
+		-moz-transform: scaleX(1.25) scaleY(0.75);
+		-webkit-transform: scaleX(1.25) scaleY(0.75);
 	}
 	50%{
-		-moz-transform: scale(1.1);
+		-moz-transform: scaleX(0.75) scaleY(1.25);	
+		-webkit-transform: scaleX(0.75) scaleY(1.25);	
+	}
+	60%{
+		-moz-transform: scaleX(1.15) scaleY(0.85);	
+		-webkit-transform: scaleX(1.15) scaleY(0.85);	
 	}
 }
