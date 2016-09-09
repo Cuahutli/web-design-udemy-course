@@ -30,78 +30,23 @@ div{
 	vertical-align: middle;
 }
 
-.reboteIn1{
-	-moz-animation: 1s reboteIn1 1;
+.salida{
+	-moz-animation: 1s salida 1;
 }
 
-@-moz-keyframes reboteIn1{
-	0%{
-		opacity: 0;
-		-moz-transform: translateX(-200%);
+@-moz-keyframes salida{
+	25%{
+		-moz-transform: scale(0.9);
 	}
 	50%{
+		-moz-transform: scale(1.1);
+	}
+	60%{
 		opacity: 1;
-		-moz-transform: translateX(20%);
 	}
-	70%{
-		-moz-transform: translateX(-10%);
-	}
-}
-
-
-
-/*es mejor hacer las animaciones de izquierda a derecha para que no aparezca el scroll*/
-.reboteIn2{
-	-moz-animation: 1s reboteIn2 1;
-}
-
-@-moz-keyframes reboteIn2{
-	0%{
-		opacity: 0;
-		-moz-transform: translateX(200%);
-	}
-	50%{
-		opacity: 1;
-		-moz-transform: translateX(-20%);
-	}
-	70%{
-		-moz-transform: translateX(10%);
+	100%{
+		opacity:0;
+		-moz-transform: scale(0.3);
 	}
 }
 
-
-.reboteIn3{
-	-moz-animation: 1s reboteIn3 1;
-}
-
-@-moz-keyframes reboteIn3{
-	0%{
-		opacity: 0;
-		-moz-transform: translateY(-200%);
-	}
-	50%{
-		opacity: 1;
-		-moz-transform: translateY(20%);
-	}
-	70%{
-		-moz-transform: translateY(-10%);
-	}
-}
-
-.reboteIn4{
-	-moz-animation: 1s reboteIn4 1;
-}
-
-@-moz-keyframes reboteIn4{
-	0%{
-		opacity: 0;
-		-moz-transform: translateY(200%);
-	}
-	50%{
-		opacity: 1;
-		-moz-transform: translateY(-20%);
-	}
-	70%{
-		-moz-transform: translateY(10%);
-	}
-}
