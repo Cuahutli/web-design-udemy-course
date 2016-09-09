@@ -30,23 +30,16 @@ div{
 	vertical-align: middle;
 }
 
-.salida{
-	-moz-animation: 1s salida 1;
+.fadeIn{
+	animation: 1s fadeIn 1;
 }
 
-@-moz-keyframes salida{
-	25%{
-		-moz-transform: scale(0.9);
+@keyframes fadeIn{
+	0%{
+		opacity:0;
 	}
 	50%{
-		-moz-transform: scale(1.1);
-	}
-	60%{
-		opacity: 1;
-	}
-	100%{
-		opacity:0;
-		-moz-transform: scale(0.3);
+		opacity:0.2;
 	}
 }
 
