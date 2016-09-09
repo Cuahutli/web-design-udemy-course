@@ -29,28 +29,26 @@ div{
 	display: inline-block;
 	vertical-align: middle;
 	margin: 50px 0 0 20px;
+	padding-top: 10px;
 	/*overflow: hidden;*/
 	
 }
 
-p{
+/*p{
 	position: absolute;
 	top:10%;
 	left: 20%;
+}*/
+
+.giro{
+	transform-origin: center;
+	animation: 1s giro 1;
 }
 
-.velozOut{
-	animation: 1s velozOut 1;
-}
-
-@keyframes velozOut{
-	25%{
-		opacity: .9;
+@keyframes giro{
+	0%{
+		opacity: 0;
+		transform: rotate(-230deg);
 	}
-	100%{
-		opacity:0;
-		transform: translateX(-200%)
-					skewX(-70deg);
-	}
-}
 
+}
