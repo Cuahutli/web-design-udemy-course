@@ -18,20 +18,29 @@
 keyframe es lo más parecido a funciones que podemos invocar
 */
 
-div{
+div.fadeIn{
 	font-family: 'Arial';
 	background-color: #a8cf45;
-	margin: 15px 20px;
-	padding: 5px 40px;
 	text-align: center;
 	font-weight: bolder;
-	width: 80px;
+	position:relative;
+	width: 120px;
+	height: 60px;
 	display: inline-block;
 	vertical-align: middle;
+	margin: 50px 0 0 20px;
+	overflow: hidden;
+	
+}
+
+p{
+	position: absolute;
+	top:10%;
+	left: 20%;
 }
 
 .fadeIn{
-	animation: 1s fadeIn 1;
+	animation: 2s fadeIn 1;
 }
 
 @keyframes fadeIn{
@@ -43,3 +52,20 @@ div{
 	}
 }
 
+.tapa{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 120px;
+	position: absolute;
+	/*background: red;*/
+	background: white;
+	z-index: 10;
+	animation: 2s retirada 1;
+}
+
+@keyframes retirada{
+	0%{
+		left:0px;
+	}
+}
