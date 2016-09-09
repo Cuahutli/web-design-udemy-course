@@ -39,24 +39,18 @@ p{
 	left: 20%;
 }
 
-.velozIn{
-	animation: 1s velozIn 1;
+.velozOut{
+	animation: 1s velozOut 1;
 }
 
-@keyframes velozIn{
-	0%{
+@keyframes velozOut{
+	25%{
+		opacity: .9;
+	}
+	100%{
 		opacity:0;
-		transform:  translateX(-200%)
-					skewX(30deg);
-	}
-	60%{
-		opacity: 1;
-		transform: translateX(-20%)
-					skewX(-30deg);
-	}
-	80%{
-		transform: translate(0%)
-					skewX(15deg);
+		transform: translateX(-200%)
+					skewX(-70deg);
 	}
 }
 
