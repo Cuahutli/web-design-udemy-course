@@ -41,7 +41,7 @@ div{
 }*/
 
 .giro{
-	transform-origin: center;
+	transform-origin: left top;
 	animation: 1s giro 1;
 }
 
