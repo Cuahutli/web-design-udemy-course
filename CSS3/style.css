@@ -14,26 +14,26 @@ div{
 }
 
 
-.giroX{
-	-moz-animation: 1.5s giroX 1;
+.giroY{
+	-moz-animation: 1.5s giroY 1;
 	/*para que se vea la parte trasera de la caja*/
 	/*-moz-backface-visibility: visible;*/
 }
 
-@-moz-keyframes giroX{
+@-moz-keyframes giroY{
 	0%{
 		opacity: 0.5;
 		-moz-transform: perspective(200px)
-						rotateX(90deg);
+						rotateY(90deg);
 	}
 	40%{
 		-moz-transform: perspective(200px)
-						rotateX(-20deg);
+						rotateY(-20deg);
 	}
 
 	70%{
 		-moz-transform: perspective(200px)
-						rotateX(20deg);
+						rotateY(20deg);
 	}
 
 }
